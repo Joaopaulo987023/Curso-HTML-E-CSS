@@ -67,18 +67,18 @@ section{
     background-color: rgba(0, 0, 0, 0.37);
 }
 #background1{
-    height: 100vh;
+    
     background-image:url(imagens/background001.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     background-attachment: fixed;
 }
 
 #background2{
-    height: 100vh;
+    
     background-image:url(imagens/background002.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     background-attachment: fixed;
 }
 
