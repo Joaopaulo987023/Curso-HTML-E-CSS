@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 10px;
+    padding: 10px;
+
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 20px;
+}
+menu{
+    display: none; /*Quando não queremos mostrar algo, nesse caso tudo que está na tag menu não precisa ser mostrado na impressão*/
+}
+article::after{
+    content: 'Esse artigo foi feito pelo joaozinho 123 do site www.joaozinho123.com.br';
+}

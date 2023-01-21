@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select e Datalist</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iest">Estados: </label>
+            <!-- O elemento select faz com que apareça uma lista com opções para você escolher -->
+
+
+            <select name="estado" id="iest">
+
+            <!-- Esssas opções podem ser separas por grupos usando a tag optgroup como no exemplo abaixo -->
+                
+                    <optgroup label="Suldeste">
+                        <option value="RS">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+               
+
+               
+                    <optgroup label="Nordeste">
+                        <option value="AJ">Aracaju</option>
+                        <option value="SA">Salvador</option>
+                    </optgroup>
+                
+
+            </select>
+        </p>
+        
+        <p>
+            <!-- O elemento datalist tbm é uma lista porém nela você também pode digitar diferente do select -->
+
+            <!-- Outra coisa é que em sua estrutura ela precisa de um input e um label para criar uma caixa de texto e tbm é preciso colocar o id da tag datalist no do elemento  (list) que fica dentro do input. -->
+
+            <label for="itexto">Profissão:</label>
+            <input type="text" id="itexto" list="datalist">
+            <datalist id="datalist">
+                <option value="ADM">Adiministrador</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <!-- Textarea é uma caixa de texto para msg -->
+            <label for="itext">Mensagem:</label><br>
+            <textarea name="text" id="itext" cols="30" rows="10" placeholder="Escreva sua msg"></textarea></p>
+    </form>
+</body>
+</html>
